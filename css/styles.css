@@ -7,6 +7,8 @@
   --zaholovokh2: #212121;
   --bcg-comand-and-button-filter: #f5f4fa;
   --icon-color: #afb1b8;
+  --transition-d: transition-duration: 250ms;
+  --transition-t: transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -529,6 +531,10 @@ a {
   height: 30px;
   border-radius: 50%;
   padding: 6px;
+}
+.modal-icon{  
+  display: inline-flex;
+  align-items: center;
 }
 
 /* /------------------------------------PORTFOLIO-------------------------- */
