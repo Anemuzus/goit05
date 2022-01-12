@@ -188,6 +188,7 @@ a {
   max-width: 696px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: 0.06em;
 }
 .cont-title-hero {
   text-align: center;
@@ -257,7 +258,14 @@ a {
 .benefits-list:nth-child(4) {
   margin-right: 0px;
 }
-
+.img-ovrl {
+  outline: 1px solid tomato;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+}
 /* ------------------------------------comand-master--------------- */
 
 .section-comand {
@@ -490,8 +498,45 @@ a {
   color: var(--bgc-text-hero);
   box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
     0px 2px 2px rgb(0 0 0 / 12%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ------------------------------------------------------------BLUE-OVERLAY--------------------- */
+.parents-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.blue-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: var(--accent-color);
+  opacity: 0;
+  transform: translateY(100%);
+}
+.flex-element:hover .blue-overlay {
+  opacity: 0.9;
+  transform: translateY(0);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
+}
+.link-hover-shadow:focus .blue-overlay {
+  opacity: 0.9;
+  transform: translateY(0);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms ease;
 }
 
+.text-overlay {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(28 / 18);
+  color: var(--bgc-text-hero);
+  letter-spacing: 0.03em;
+}
 .flex-container {
   list-style: none;
   display: flex;
@@ -516,6 +561,8 @@ a {
   display: block;
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .name-card {
