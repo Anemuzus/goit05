@@ -7,7 +7,7 @@
   --zaholovokh2: #212121;
   --bcg-comand-and-button-filter: #f5f4fa;
   --icon-color: #afb1b8;
-  --transition-d: 250ms;
+  --transition-d: 2250ms;
   --transition-t: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -157,7 +157,7 @@ a {
   padding-bottom: 32px;
   transition-duration: var(--transition-d);
   transition-timing-function: var(--transition-t);
-  transition-property: fill;
+  /* transition-property: fill; */
 }
 .link:hover .header-icons {
   fill: var(--accent-color);
@@ -438,6 +438,7 @@ a {
   margin-right: 10px;
   transition-duration: var(--transition-d);
   transition-timing-function: var(--transition-t);
+  transition-property: fill;
 }
 .header-icons:hover {
   fill: var(--accent-color);
@@ -594,6 +595,7 @@ a {
   padding: 6px 22px 6px 22px;
   transition-duration: var(--transition-d);
   transition-timing-function: var(--transition-t);
+  transition-property: border, border-radius, background-color, color, box-shadow;
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
